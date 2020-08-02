@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+h1{
+  font-size: 36px;
+  font-weight: bold;
+}
+h3{
+  margin-bottom: 8px;
+}
+
+/*
+h１前に四角のCss
+h1.box {
+  position: relative;
+  padding-left:36px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1.box:before {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 20px;
+  left: 0;
+  border-radius: 10.5%;
+  background-color: #F90060;
+  content:"";
+} */
+/**
+*header
+*/
+.page-header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 16px;
+}
+.logo{
+  width: 70%;
+}
+.big-bg{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home{
+  height: 140px;
+  margin-bottom: 90px;
+}
+#home .page-title{
+  text-align: center;
+  color: #fff;
+}
+
+/**
+*footer
+*/
+footer{
+  height: 140px;
+  margin-top: 96px;
+  background-color: #fff;
+  text-align: center;
+}
+footer p{
+  color: #606060;
+  font-size: 0.875rem;
+}
+.copyright{
+  padding-top: 60px;
+}
+
+/**
+*contents
+*/
+
+.main-img{
+  width: 50%;
+  margin-right: 15px;
+  text-align: right;
+}
+.side-text{
+  width: 50%;
+}
+.stone-text{
+  width: 480px;
+  justify-content: space-between;
+}
+
+.main-img img{
+  width: 450px;
+}
+.stone-contents{
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 66px;
+}
+.stone-title{
+  width: 480px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/* 石の詳細 */
+.stone-details-contents{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5%;
+  margin-bottom: 96px;
+
+}
+.stene-details-area{
+  width: 380px;
+  padding: 2%;
+}
+.dotted-line{
+  border-right: 2px dotted #F90060;
+}
+.stone-details-title{
+  width: 100%;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.stone-details-text{
+  width: 100%;
+  justify-content: space-around;
+}
+.stone-details-text-img{
+  text-align: center;
+}
+.stone-details-text img{
+  width:12%;
+  text-align: center;
+}
+
+
+.back-btn-area{
+  display: flex;
+  justify-content: center;
+  width: 100px auto;
+}
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #333;
+  border: solid 2px #333;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #333;
+  color: white;
+}
+
+
+/*item color*/
+.yellow{
+  background: #FFCD00;
+}
+.purple{
+  background-color: #5F15BE;
+}
+.green{
+  background-color: #00B24E;
+}
+.redtext{
+  background-color: #F90060;
+}
+.blue{
+  background-color: #007F9A;
+}
+.orange{
+  background-color: #FF6F00;
+}
+
+/**
+* @media query
+*/
+
+@media (max-width:1200px) {
+
+  .stone-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .stone-details-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .stone-title,.stone-text,.side-text {
+    width : 480px;
+  }
+
+  article,section,aside{
+    width: 100%;
+  }
+}
+
+@media (max-width:940px) {
+.stone-title,.stone-text,.side-text {width : 100%;}
+.dotted-line{border : none;}
+.stene-details-area{
+  margin-bottom: 10%;
+}
+}
